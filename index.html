@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo | Fazendas Verticais Sustentáveis</title>
+    <!-- Vinculação do arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones externos para o design -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> Agro<span>Futuro</span>
+            </div>
+            <!-- Menu para Computador -->
+            <nav class="nav-menu">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#sobre">Tecnologia</a>
+                <a href="#simulador">Simulador</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <!-- Botão do Menu Responsivo (Celular) -->
+            <button class="menu-toggle" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO (INTRODUÇÃO ANIMADA) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content container">
+            <h1>O Futuro da Agricultura é <span class="txt-efeito"></span></h1>
+            <p>Produzindo 10x mais alimentos por metro quadrado, economizando 95% de água e sem usar agrotóxicos.</p>
+            <a href="#simulador" class="btn-principal">Testar Simulador</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE / CARDS DE TECNOLOGIA -->
+    <section id="sobre" class="features container">
+        <h2 class="titulo-secao">Nossa Tecnologia Sustentável</h2>
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <i class="fa-solid fa-cloud-water"></i>
+                <h3>Hidroponia Estrita</h3>
+                <p>As raízes recebem água rica em nutrientes diretamente, eliminando o uso de solo e reduzindo o desperdício.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Iluminação LED LED</h3>
+                <p>Luzes em frequências específicas aceleram a fotossíntese, garantindo colheitas perfeitas o ano todo.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <i class="fa-solid fa-robot"></i>
+                <h3>Automação com IA</h3>
+                <p>Sensores monitoram temperatura, umidade e PH em tempo real para o máximo rendimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO INTERATIVA: SIMULADOR DE ECONOMIA -->
+    <section id="simulador" class="simulador-section">
+        <div class="container container-simulador">
+            <div class="simulador-info">
+                <h2>Simulador de Impacto Agro</h2>
+                <p>Selecione o tamanho da plantação e veja quanta água e espaço você economiza ao mudar para o sistema vertical futurista.</p>
+            </div>
+            <div class="simulador-box">
+                <label for="tamanho-area">Tamanho da Plantação Desejada:</label>
+                <select id="tamanho-area">
+                    <option value="pequeno">Pequena (Abastece um Bairro)</option>
+                    <option value="medio" selected>Média (Abastece uma Cidade Pequena)</option>
+                    <option value="grande">Grande (Abastece uma Metrópole)</option>
+                </select>
+
+                <!-- Contadores Animados via JS -->
+                <div class="resultados">
+                    <div class="dado">
+                        <span class="numero" id="qtd-agua">0</span>
+                        <p>Litros de Água Poupados/Ano</p>
+                    </div>
+                    <div class="dado">
+                        <span class="numero" id="qtd-espaco">0</span>
+                        <p>M² de Solo Preservados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato" class="contato container">
+        <h2 class="titulo-secao">Traga o Futuro para sua Cidade</h2>
+        <form id="form-contato" class="form-style">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit" class="btn-principal">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 AgroFuturo. Desenvolvido para um amanhã sustentável.</p>
+            <div class="sociais">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vinculação do arquivo de scripts JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
